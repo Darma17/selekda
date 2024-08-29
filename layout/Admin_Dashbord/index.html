@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo"><img src="../images/Logo.png" alt=""></div>
+        <nav class="navbar">
+            <input type="text" placeholder="Search..." class="search-bar">
+            <div class="user-info">
+                <img src="../images/images (5).jpg" alt="User Avatar" class="user-avatar">
+                <span class="user-name">Admin Name</span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <ul class="sidebar-nav">
+                <li><a href="#" onclick="showSection('dashboard')">Dashboard Overview</a></li>
+                <li><a href="#" onclick="showSection('users')">Users</a></li>
+                <li><a href="#" onclick="showSection('settings')">Settings</a></li>
+                <li><a href="#" onclick="showSection('analytics')">Analytics</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </aside>
+
+        <!-- Content Area -->
+        <div class="content">
+            <!-- Dashboard Overview Section -->
+            <div id="dashboard" class="section active">
+                <h1>Dashboard Overview</h1>
+                <div class="charts">
+                    <div class="chart" id="chart1">
+                        <!-- Chart 1 will be rendered here -->
+                    </div>
+                    <div class="chart" id="chart2">
+                        <!-- Chart 2 will be rendered here -->
+                    </div>
+                    <div class="chart" id="chart3">
+                        <!-- Chart 3 will be rendered here -->
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Users Section -->
+            <div id="users" class="section">
+                <h1>Users Management</h1>
+                <table class="user-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Role</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>johndoe@example.com</td>
+                            <td>Admin</td>
+                            <td>Active</td>
+                            <td>
+                                <button>Edit</button>
+                                <button>Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Jane Smith</td>
+                            <td>janesmith@example.com</td>
+                            <td>Editor</td>
+                            <td>Active</td>
+                            <td>
+                                <button>Edit</button>
+                                <button>Delete</button>
+                            </td>
+                        </tr>
+                        <!-- Add more users as needed -->
+                    </tbody>
+                </table>
+            </div>
+        
+            <!-- Settings Section -->
+            <div id="settings" class="section">
+                <h1>Settings</h1>
+                <form class="settings-form">
+                    <div class="form-group">
+                        <label for="site-name">Site Name:</label>
+                        <input type="text" id="site-name" placeholder="Enter site name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Admin Email:</label>
+                        <input type="email" id="email" placeholder="Enter admin email">
+                    </div>
+                    <div class="form-group">
+                        <label for="theme">Theme:</label>
+                        <select id="theme">
+                            <option value="light">Light</option>
+                            <option value="dark">Dark</option>
+                            <option value="custom">Custom</option>
+                        </select>
+                    </div>
+                    <button type="submit">Save Settings</button>
+                </form>
+            </div>
+        
+            <!-- Analytics Section -->
+            <div id="analytics" class="section">
+                <h1>Site Analytics</h1>
+                <div class="analytics-metrics">
+                    <div class="metric">
+                        <h3>Total Visitors</h3>
+                        <p>12,345</p>
+                    </div>
+                    <div class="metric">
+                        <h3>Page Views</h3>
+                        <p>56,789</p>
+                    </div>
+                    <div class="metric">
+                        <h3>Bounce Rate</h3>
+                        <p>32%</p>
+                    </div>
+                    <div class="metric">
+                        <h3>Average Session Duration</h3>
+                        <p>3m 45s</p>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
