@@ -53,6 +53,10 @@ h2 {
     margin: 0 15px;
 }
 
+#navbar li a:hover {
+    background-color: purple;
+}
+
 #navbar ul li a {
     color: white;
     text-decoration: none;
