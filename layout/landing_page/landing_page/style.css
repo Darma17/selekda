@@ -8,6 +8,21 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* Untuk Browser Webkit seperti Chrome, Safari */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Untuk Firefox */
+html {
+    scrollbar-width: none;
+}
+
+/* Untuk IE dan Edge Lama */
+body {
+    -ms-overflow-style: none;
+}
+
 h2 {
     margin-bottom: 1em;
 }
