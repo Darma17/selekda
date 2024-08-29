@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Detail with JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header with Logo -->
+    <header>
+        <div class="logo">
+            <img src="../images/logo-removebg-preview.png" alt="Your Logo">
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Blog Detail Section -->
+        <section id="blog-detail">
+            <h1>Blog Title</h1>
+            <img src="../images/blog.jpg" alt="Blog Detail Image">
+            <p class="description">Full description of the blog post goes here...</p>
+            <p class="author">By Author Name</p>
+            <p class="date">Posted on August 10, 2024</p>
+            <p class="views">Views: 300</p>
+            <p class="comments">Comments: <span id="comment-count">0</span></p>
+            <!-- Like and Dislike Buttons -->
+            <div class="like-dislike">
+                <button id="like-btn">Like 👍 (<span id="like-count">0</span>)</button>
+                <button id="dislike-btn">Dislike 👎 (<span id="dislike-count">0</span>)</button>
+            </div>
+        </section>
+
+        <!-- Comment Section -->
+        <section id="comments">
+            <h2>Comments</h2>
+            <div id="comment-list">
+                <!-- Dynamic Comments will be added here -->
+            </div>
+        </section>
+
+        <!-- Comment Form -->
+        <section id="comment-form">
+            <h2>Leave a Comment</h2>
+            <form id="commentForm">
+                <input type="text" name="name" id="name" placeholder="Your Name" required>
+                <input type="email" name="email" id="email" placeholder="Your Email" required>
+                <input type="text" name="subject" id="subject" placeholder="Subject">
+                <input type="text" name="website" id="website" placeholder="Website">
+                <textarea name="comment" id="comment" placeholder="Your Comment" required></textarea>
+                <div class="captcha">
+                    <label for="captcha">What is 2 + 2? </label>
+                    <input type="text" id="captcha" placeholder="Answer" required>
+                </div>
+                <input type="submit" value="Submit Comment">
+            </form>
+        </section>
+
+        <!-- Popular Tags -->
+        <aside id="popular-tags">
+            <h2>Popular Tags</h2>
+            <div class="tags">
+                <a href="#" class="tag">Technology</a>
+                <a href="#" class="tag">Lifestyle</a>
+                <a href="#" class="tag">Travel</a>
+                <a href="#" class="tag">Food</a>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Your Blog. All rights reserved. Designed by: Darma</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
