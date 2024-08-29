@@ -65,6 +65,10 @@ h2 {
     font-weight: bold;
 }
 
+#navbar li a:hover {
+    background-color: purple;
+}
+
 #banner {
     height: 100vh;
     background: url('../images/banner.webp') no-repeat center center/cover;
