@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Fixed Interactive Menu -->
+    <nav id="navbar">
+        <div class="logo">
+            <img src="../images/logo-removebg-preview.png" alt="Logo">
+        </div>
+        <ul>
+            <li><a href="#banner">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Project</a></li>
+            <li><a href="#footer">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Interactive Banner Section -->
+    <section id="banner">
+        <div class="banner-content">
+            <h1>Welcome to My Portofolio</h1>
+            <p>I'm Darma, a programmer with a focus JavaScript, Python and React</p>
+            <button>Get Started</button>
+        </div>
+    </section>
+
+    <!-- Short Text Section About -->
+    <section id="about" class="text-section">
+        <h2>About Me</h2>
+        <p>Hello! I'm Darma, a passionate and dedicated software developer with a focus on creating innovative and efficient solutions. With a strong background in JavaScript, Python, and React, I specialize in building dynamic web applications, developing robust software solutions, and analyzing data to drive actionable insights.</p>
+    </section>
+
+    <!-- Image  Thumbnail Section -->
+    <section id="gallery" class="gallery-section">
+        <h2>Images</h2>
+        <div class="gallery-grid">
+            <img src="../images/images (4).png" alt="Gallery Image 1" height="200px">
+            <img src="../images/images (2).png" alt="Gallery Image 2" height="200px">
+            <img src="../images/images (3).jpg" alt="Gallery Image 3" height="200px">
+        </div>
+    </section>
+    <br>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <h2>My Project</h2>
+    </section>
+
+
+    <!-- Portfolio Categories Filter -->
+    <div class="filter-container">
+        <button class="filter-btn" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web Development</button>
+        <button class="filter-btn" data-filter="app">App Development</button>
+        <button class="filter-btn" data-filter="data">Data Science</button>
+    </div>
+
+    <!-- Portfolio List -->
+    <div class="portfolio-container" id="portfolio-list">
+        <!-- Example Portfolio Item -->
+        <div class="portfolio-item" data-category="web">
+            <img src="../images/web.png" alt="Project Image" class="portfolio-img">
+            <div class="portfolio-info">
+                <h3 class="portfolio-title">Web Application</h3>
+                <p class="portfolio-description">A full-stack web application for task management.</p>
+                <p class="portfolio-meta">Author: Darma Smith | Date: 2024-08-15</p>
+                <p class="portfolio-meta">Views: 250 | Comments: 12</p>
+                <button class="view-details-btn" data-project="1">View Details</button>
+            </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="portfolio-item" data-category="app">
+            <img src="../images/web.png" alt="Project Image" class="portfolio-img">
+            <div class="portfolio-info">
+                <h3 class="portfolio-title">Fitness Tracker App</h3>
+                <p class="portfolio-description">A mobile app designed to track workouts and monitor fitness progress, developed using Flutter.</p>
+                <p class="portfolio-meta">Author: Darma Johnson | Date: 2024-07-20</p>
+                <p class="portfolio-meta">Views: 320 | Comments: 8</p>
+                <button class="view-details-btn" data-project="2">View Details</button>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="portfolio-item" data-category="data">
+            <img src="../images/web.png" alt="Project Image" class="portfolio-img">
+            <div class="portfolio-info">
+                <h3 class="portfolio-title">Data Visualization Dashboard</h3>
+                <p class="portfolio-description">An interactive dashboard for visualizing data trends using D3.js and Python.</p>
+                <p class="portfolio-meta">Author: Darma Lee | Date: 2024-06-05</p>
+                <p class="portfolio-meta">Views: 180 | Comments: 15</p>
+                <button class="view-details-btn" data-project="3">View Details</button>
+            </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="portfolio-item" data-category="web">
+            <img src="../images/web.png" alt="Project Image" class="portfolio-img">
+            <div class="portfolio-info">
+                <h3 class="portfolio-title">E-commerce Website</h3>
+                <p class="portfolio-description">A scalable e-commerce platform built with Django and PostgreSQL.</p>
+                <p class="portfolio-meta">Author: Darma Wilson | Date: 2024-05-30</p>
+                <p class="portfolio-meta">Views: 400 | Comments: 20</p>
+                <button class="view-details-btn" data-project="4">View Details</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <img src="" alt="Project Image" class="modal-img">
+            <h2 class="modal-title">Project Title</h2>
+            <p class="modal-description">Full project description goes here.</p>
+            <p class="modal-meta"><strong>Author:</strong> Author Name</p>
+            <p class="modal-meta"><strong>Date:</strong> Date</p>
+            <p class="modal-meta"><strong>Total Views:</strong> Views</p>
+            <p class="modal-meta"><strong>Comments:</strong> Comments</p>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank"><img src="../images/fb.png" alt="Facebook"></a>
+            <a href="https://twitter.com" target="_blank"><img src="../images/instagram.png" alt="Twitter"></a>
+            <a href="https://instagram.com" target="_blank"><img src="../images/youtube.png" alt="Instagram"></a>
+        </div>
+        <p>© 2024 Your Company. All rights reserved.</p>
+        <p>Designed by: Raja Uno</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
