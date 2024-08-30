@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Untuk Browser Webkit seperti Chrome, Safari */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Untuk Firefox */
+html {
+    scrollbar-width: none;
+}
+
+/* Untuk IE dan Edge Lama */
+body {
+    -ms-overflow-style: none;
+}
+
+h2 {
+    margin-bottom: 1em;
+}
+
+#navbar {
+    position: fixed;
+    top: -10px;
+    width: 100%;
+    background-color: #9f97f3;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+#navbar .logo img {
+    height: 50px;
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+#navbar ul li {
+    margin: 0 15px;
+}
+
+#navbar li a:hover {
+    background-color: purple;
+}
+
+#navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#banner {
+    height: 100vh;
+    background: url('../images/banner.webp') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+#banner h1 {
+    font-size: 3em;
+}
+
+#banner p {
+    font-size: 1.2em;
+}
+
+#banner button {
+    padding: 10px 20px;
+    background-color: #ff7f50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1em;
+}
+
+.text-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.text-section h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.gallery-section, .news-section, .services-section, .portfolio-section, .testimonials-section {
+    padding: 30px 20px;
+}
+
+.gallery-grid, .news-grid, .services-grid, .portfolio-grid, .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.gallery-grid img, .portfolio-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.testimonials-grid blockquote {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-left: 5px solid #ff7f50;
+}
+
+.testimonials-grid blockquote p {
+    margin-bottom: 10px;
+}
+
+.testimonials-grid blockquote cite {
+    font-style: italic;
+    color: #666;
+}
+
+.search-section {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.search-section input {
+    padding: 10px;
+    width: 60%;
+    max-width: 400px;
+    margin-right: 10px;
+    font-size: 1em;
+}
+
+.search-section button {
+    padding: 10px 20px;
+    background-color: #ff7f50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+footer {
+    background-color: #9f97f3;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .social-media {
+    margin-bottom: 10px;
+}
+
+footer .social-media a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+footer .social-media img {
+    height: 30px;
+    width: 30px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+.portfolio-section {
+    margin-bottom: 0;
+}
