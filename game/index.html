@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Head Football</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="welcome-screen">
+        <h1>World Head Football</h1>
+        <input type="text" id="username" placeholder="Enter your username">
+        <button id="play-button" disabled>Play Game</button>
+        <button id="instructions-button">Instructions</button>
+    </div>
+
+    <div id="instructions">
+        <h2>Instructions</h2>
+        <p>Use A, W, D to move and spacebar to kick the ball. Press Escape to pause.</p>
+        <button id="close-instructions">Close</button>
+    </div>
+
+    <div id="game-screen">
+        <div id="scoreboard">
+            <span id="player-score">0</span> - <span id="opponent-score">0</span>
+            <span id="timer">30</span>
+        </div>
+        <div id="player" class="character"></div>
+        <div id="opponent" class="character"></div>
+        <div id="ball"></div>
+    </div>
+
+    <div id="countdown">3</div>
+
+    <div id="pause-screen">
+        <h2>Game Paused</h2>
+        <button id="resume-button">Resume</button>
+    </div>
+
+    <div id="game-over-screen">
+        <h2>Game Over</h2>
+        <p>Final Score: <span id="final-score"></span></p>
+        <button id="restart-button">Restart</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
